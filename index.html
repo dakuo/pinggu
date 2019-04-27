@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<script src='jquery-1.9.1.min.js'></script>
+	<script src='Echarts/echarts.js'></script>
+	<script src='index.js'></script>
+	<title>基于深度神经网络人工智能技术的北京市平谷区域健康监测与预警系统（居民新增高血压）</title>
+
+
+
+
+
+	<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+    $( function() {
+      $( "#slider-range" ).slider({
+        range: true,
+        min: 5,
+        max: 500,
+      	values: [ 75, 300 ],
+      	slide: function( event, ui ) {
+        	$( "#amount" ).val( "$" + ui.values[ 0 ] + " - $" + ui.values[ 1 ] );
+      	}
+    	});
+    	$( "#amount" ).val( "$" + $( "#slider-range" ).slider( "values", 0 ) +
+      		" - $" + $( "#slider-range" ).slider( "values", 1 ) );
+		} );
+	</script>
+	  
+
+
+	  <link rel="stylesheet" href="//code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css">
+	  <script src="//code.jquery.com/jquery-1.9.1.js"></script>
+	  <script src="//code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+	  <link rel="stylesheet" href="http://jqueryui.com/resources/demos/style.css">
+	  <script>
+
+
+	  $(function() {
+
+
+		
+
+		$( "#from" ).datepicker({
+		  defaultDate: "+1w",
+		  changeMonth: true,
+		  numberOfMonths: 3,
+		  onClose: function( selectedDate ) {
+			$( "#to" ).datepicker( "option", "minDate", selectedDate );
+		  }
+		});
+		$( "#to" ).datepicker({
+		  defaultDate: "+1w",
+		  changeMonth: true,
+		  numberOfMonths: 3,
+		  onClose: function( selectedDate ) {
+			$( "#from" ).datepicker( "option", "maxDate", selectedDate );
+		  }
+		});
+	  });
+		</script>
+		
+
+		<script>
+			$(function() {
+				$( "#datepicker1" ).datepicker({
+					changeMonth: true,
+					changeYear: true
+				});
+			});
+			</script>
+			<script>
+				$(function() {
+					$( "#datepicker2" ).datepicker({
+						changeMonth: true,
+						changeYear: true
+					});
+				});
+
+
+
+
+				$(function()
+{   
+    $(".monthPicker").datepicker({
+        dateFormat: 'yy MM',
+        changeMonth: true,
+        changeYear: true,
+        showButtonPanel: true,
+
+        onClose: function(dateText, inst) {
+					  var year = $("#ui-datepicker-div .ui-datepicker-year :selected").val();
+            var month = $("#ui-datepicker-div .ui-datepicker-month :selected").val();
+            $(this).val($.datepicker.formatDate('yy-MM', new Date(year, month, 1)));
+        }
+    });
+
+    $(".monthPicker").focus(function () {
+        $(".ui-datepicker-calendar").hide();
+        $("#ui-datepicker-div").position({
+            my: "center top",
+            at: "center bottom",
+            of: $(this)
+        });
+    });
+});
+
+
+jQuery(function($){ 
+     $.datepicker.regional['zh-CN'] = { 
+        clearText: '清除', 
+        clearStatus: '清除已选日期', 
+        closeText: '确定', 
+        closeStatus: '不改变当前选择', 
+        prevText: '< 上月', 
+        prevStatus: '显示上月', 
+        prevBigText: '<<', 
+        prevBigStatus: '显示上一年', 
+        nextText: '下月>', 
+        nextStatus: '显示下月', 
+        nextBigText: '>>', 
+        nextBigStatus: '显示下一年', 
+        currentText: '今天', 
+        currentStatus: '显示本月', 
+        monthNames: ['01','02','03','04','05','06', '07','08','09','10','11','12'], 
+        monthNamesShort: ['01','02','03','04','05','06', '07','08','09','10','11','12'], 
+        monthStatus: '选择月份', 
+        yearStatus: '选择年份', 
+        weekHeader: '周', 
+        weekStatus: '年内周次', 
+        dayNames: ['星期日','星期一','星期二','星期三','星期四','星期五','星期六'], 
+        dayNamesShort: ['周日','周一','周二','周三','周四','周五','周六'], 
+        dayNamesMin: ['日','一','二','三','四','五','六'], 
+        dayStatus: '设置 DD 为一周起始', 
+        dateStatus: '选择 m月 d日, DD', 
+        dateFormat: 'yy-mm-dd', 
+        firstDay: 1, 
+        initStatus: '请选择日期', 
+        isRTL: false}; 
+        $.datepicker.setDefaults($.datepicker.regional['zh-CN']); 
+		});
+		
+
+				</script>
+
+
+
+</head>
+<body>
+	
+	<h1 align="center">基于深度神经网络人工智能技术的北京市平谷区域健康监测与预警系统（居民新增高血压）</h1><br>
+    <section align="center">
+	<!--<label for="from">从</label>
+	<input type="text" id="from" name="from">
+	<label for="to">到</label>
+	<input type="text" id="to" name="to">
+	<p>从：<input type="text" id="datepicker1"></p>
+	<p>到：<input type="text" id="datepicker2"></p>
+		-->
+		<label for="month">从： </label>
+		<input type="text" id="month1" name="month" class="monthPicker" value="2019-01" />
+		<label for="month">到： </label>
+		<input type="text" id="month2" name="month" class="monthPicker" value="2019-03"/>
+		<input type="button" value="确定" onclick="javascript:button_onclick();" />
+    </section>
+	<div id="map" style="width:600px;height: 700px;margin: 0 auto"></div>
+
+
+
+
+	<!--
+	<p>
+		<label for="amount">Price range:</label>
+		<input type="text" id="amount" readonly style="border:0; color:#f6931f; font-weight:bold;">
+	  </p>
+	   
+	  <div id="slider-range"></div>
+	-->
+
+
+	
+
+</body>
+</html>

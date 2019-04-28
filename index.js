@@ -10562,8 +10562,9 @@ function refreshMinData(data){
 	            calculable: true,
 	            inRange: {
 					//color: ['#7FFF00', '#FF7F00','#EE3B3B','#FF0000']
-					color: ['#008B00', '#61D800','#C6F68D','#F2FDE4','#FFDDB0','#FF9E22','#F47100','#E54304','#EE3B3B','#FF0000']
+					//color: ['#008B00', '#61D800','#C6F68D','#F2FDE4','#FFDDB0','#FF9E22','#F47100','#E54304','#EE3B3B','#FF0000']
 					//color: ['#008B00','#09AF00','#41C300','#61D800','#75E900']
+					color: ['##FFCCBC','#FFAB91','#FF8A65','#FF7043','#FF5722','#F4511E','#E64A19','#D84315']
 	            }
 	        },
 		    series: [
@@ -21156,7 +21157,8 @@ function refreshMinData(data){
 	            realtime: false,
 	            calculable: true,
 	            inRange: {
-	                color: ['#008B00', '#61D800','#C6F68D','#F2FDE4','#FFDDB0','#FF9E22','#F47100','#E54304','#EE3B3B','#FF0000']
+					color: ['#FFCCBC','#FFAB91','#FF8A65','#FF7043','#FF5722','#F4511E','#E64A19','#D84315']
+					//color: ['#008B00', '#61D800','#C6F68D','#F2FDE4','#FFDDB0','#FF9E22','#F47100','#E54304','#EE3B3B','#FF0000']
 	            }
 	        },
 		    series: [
@@ -21169,7 +21171,7 @@ function refreshMinData(data){
 		                normal: {
 		                    show: true,
 		                    textStyle: {
-		                        color: '#fff'
+		                        color: '#080808'
 		                    }
 		                },
 		                emphasis: {
